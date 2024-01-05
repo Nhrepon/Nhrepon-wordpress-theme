@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row bg-light">
 	<!-- Nhrepon Side bar 1 -->
 	<?php if (is_active_sidebar('nhrepon-sidebar-1')) { ?>
 		<div class="sidebar-section">
@@ -7,7 +7,7 @@
 	<?php } ?>
 
 	<!-- Random post section -->
-	<div class="random-post sidebar-section row">
+	<div class="random-post sidebar-section ">
 		<ol>
 			<?php
 			$randompost = new wp_Query(array(
@@ -31,12 +31,10 @@
 								<?php } ?>
 							</div>
 							<div class="col-12">
-								<h4 class="fs-sm">
+								<h4 class="fs-6">
 									<?php the_title(); ?>
 								</h4>
-								<p class="date">
-									<?php echo get_the_modified_time('F j, Y'); ?>
-								</p>
+								
 							</div>
 						</a>
 					</li>

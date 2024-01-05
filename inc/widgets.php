@@ -50,7 +50,7 @@ function nhrepon_register_sidebars() {
             'id'            => 'nhrepon-footer-1',
             'name'          => __( 'nhrepon Footer 1', 'nhrepon'  ),
             'description'   => __( 'A short description of the sidebar.' ),
-            'before_widget' => '<div id="nhrepon-footer-1" class="footer-widget">',
+            'before_widget' => '<div id="nhrepon-footer-1" class="footer-widget col-sm-12 col-md-4">',
             'after_widget'  => '</div>',
 
         )

@@ -32,7 +32,7 @@
 
 					<?php $args = array(
 						'theme_location' => 'header_menu',
-						'menu_class' => 'navbar-nav',
+						'menu_class' => 'navbar-nav'
 					
 					);
 					wp_nav_menu($args); ?>

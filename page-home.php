@@ -16,10 +16,10 @@
 </div>
 
 <div class="container-fluid">
-	<div class="container">
+	<div class="container my-3">
 		<div class="row bg">
 			<div class="col-sm-12 col-md-12 col-lg-9">
-				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+				<div id="carouselExampleCaptions" class="carousel slide py-2" data-bs-ride="carousel">
 					<div class="carousel-inner">
 						<?php
 						$nhrepon = new wp_Query(array(
@@ -95,7 +95,7 @@
 									</a>
 								</div>
 
-								<h2 class="fs-5">
+								<h2 class="fs-6">
 									<a href="<?php the_permalink(); ?>">
 										<?php the_title(); ?>
 									</a>
@@ -114,12 +114,12 @@
 
 
 <div class="container-fluid">
-	<div class="container">
+	<div class="container my-3">
 		<div class="row">
 			<?php
 			$nhrepon = new wp_Query(array(
 				'post_type' => 'post',
-				'posts_per_page' => '12',
+				'posts_per_page' => '6',
 				'orderby' => 'rand',
 				'order' => 'DESC',
 				'category_name' => ''));
@@ -140,7 +140,7 @@
 							</a>
 						</div>
 
-						<h2 class="fs-4">
+						<h2 class="fs-5">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_title(); ?>
 							</a>

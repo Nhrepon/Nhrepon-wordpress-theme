@@ -38,7 +38,7 @@
 									</a>
 								</div>
 								<div class="col-12 col-sm-12 col-md-7 col-lg-6">
-									<h1 class="fs-3"><a href="<?php the_permalink(); ?>">
+									<h1 class="fs-4"><a href="<?php the_permalink(); ?>">
 											<?php the_title(); ?>
 										</a></h1>
 									<div class="post-meta">

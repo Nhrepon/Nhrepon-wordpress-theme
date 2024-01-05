@@ -1,4 +1,5 @@
-
+<div class="row">
+	
 <?php
 if ( post_password_required() ) {
 	return;
@@ -8,12 +9,12 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
+		<h2 class="fs-3">
 			<?php
 				$comments_number = get_comments_number();
 			if ( '1' === $comments_number ) {
 				/* translators: %s: Post title. */
-				printf( _x( '1 comment on &ldquo;%s&rdquo;', 'comments title', 'Jobnews' ), get_the_title() );
+				printf( _x( '1 comment on &ldquo;%s&rdquo;', 'comments title', 'Nhrepon' ), get_the_title() );
 			} else {
 				printf(
 					/* translators: 1: Number of comments, 2: Post title. */
@@ -22,7 +23,7 @@ if ( post_password_required() ) {
 						'%1$s Comments on &ldquo;%2$s&rdquo;',
 						$comments_number,
 						'comments title',
-						'Jobnews'
+						'Nhrepon'
 					),
 					number_format_i18n( $comments_number ),
 					get_the_title()
@@ -52,7 +53,7 @@ if ( post_password_required() ) {
 	<?php
 	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 		?>
-	<p class="no-comments"><?php _e( 'Comments are closed.', 'Jobnews' ); ?></p>
+	<p class="no-comments"><?php _e( 'Comments are closed.', 'Nhrepon' ); ?></p>
 	<?php endif; ?>
 
 	<?php
@@ -60,8 +61,11 @@ if ( post_password_required() ) {
 			array(
 				'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
 				'title_reply_after'  => '</h2>',
+				'label_submit'         => __( 'Submit Comment' )
 			)
 		);
 		?>
+
+</div>
 
 </div>
