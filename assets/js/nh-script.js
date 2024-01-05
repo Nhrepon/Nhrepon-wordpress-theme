@@ -1,4 +1,14 @@
 
+
+
+
+
+
+
+
+
+
+//Bootstrap class add on menu 
 const items = document.querySelectorAll(".menu-item");
 for (const item of items){
 	item.classList.add("nav-item");
@@ -6,7 +16,7 @@ for (const item of items){
 
 const links=document.querySelectorAll(".nav-item > a");
 for(const link of links){
-link.classList.add("nav-link")
+link.classList.add("nav-link", "text-success")
 }
 
 const dropdowns=document.querySelectorAll(".menu-item-has-children");
@@ -29,12 +39,18 @@ for(const ddmenu of ddmenus){
 
 const ddlinks=document.querySelectorAll(".dropdown-menu > li > a");
 for(const ddlink of ddlinks){
-ddlink.classList.add("dropdown-item")
+ddlink.classList.add("dropdown-item");
 }
 
+//
 
+const carosoulactive = document.querySelector(".carousel-item").classList.add("active");
 
-
+const carouselImgs=document.querySelectorAll(".carousel-item > img");
+for(const carouselImg of carouselImgs){
+	carouselImg.setAttribute("width", "100%");
+	carouselImg.setAttribute("height","300px");
+}
 
 /*
 function mobileMenuToggle(){
