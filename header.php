@@ -18,8 +18,8 @@
 <body <?php body_class(); ?>>
 
 	<div class="header-wrapper container-fluid">
-		<nav class="navbar navbar-expand-md navbar-light bg-light">
-			<div class="container">
+		<nav class="navbar navbar-expand-md">
+			<div class="container navbar-light bg-light">
 				<a class="navbar-brand col-sm-6 fs-2 text-success fw-bold" href="<?php echo get_home_url(); ?>">
 					<?php bloginfo('name'); ?>
 				</a>

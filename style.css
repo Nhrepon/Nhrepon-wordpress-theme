@@ -109,13 +109,13 @@ body{background-color:#e8e8e8;font-family:SolaimanLipi, Georgia, Roboto, serif, 
 .random-post ol li:last-child{border-bottom:none;margin-bottom:none;}
 
 .sidebar-section{padding: 10px;margin-bottom:20px;}
-.sidebar ul{list-style-type: none;}
-.sidebar ul li{padding: 10px 5px;}
-.sidebar ul li:before{content: "\203A";margin-right:10px;}
-.sidebar ul li:hover{padding-left:15px;}
-.sidebar ul li ul li{padding:5px;margin-left:10px;clear:both;}
-.sidebar ul li ul li:before{content: "\203A";margin-right:10px;}
-.sidebar h2, .sidebar h3{margin-top: 25px;}
+.sidebar-section ul{list-style-type: none;}
+.sidebar-section ul li{padding: 10px 5px;}
+.sidebar-section ul li:before{content: "\203A";margin-right:10px;}
+.sidebar-section ul li:hover{padding-left:15px;}
+.sidebar-section ul li ul li{padding:5px;margin-left:10px;clear:both;}
+.sidebar-section ul li ul li:before{content: "\203A";margin-right:10px;}
+.sidebar-section h2, .sidebar-section h3{margin-top: 25px;}
 
 
 /*Page section*/
