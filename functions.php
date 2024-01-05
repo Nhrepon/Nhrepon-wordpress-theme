@@ -8,13 +8,13 @@ add_action( 'widgets_init', 'nhrepon_register_sidebars' );
 
 
 //custom script
-function nhrepon_script() {
+/*function nhrepon_script() {
     wp_enqueue_script(
         'nhrepon_script',
         get_template_directory_uri() . '/assets/js/nhrepon_script.js',
         array('jquery'), wp_get_theme()->get('Version') , 'all' );
 }
-add_action('wp_enqueue_scripts', 'nhrepon_script');
+add_action('wp_enqueue_scripts', 'nhrepon_script');*/
 
 //Register menu
 function nhrepon_nav_menu(){
@@ -31,6 +31,23 @@ add_theme_support( 'infinite-scroll', array(
  'container' => 'content',
  'footer' => 'page',
 ) );
+
+add_theme_support( 'title-tag' );
+add_theme_support(
+    'post-formats',
+    array(
+        'link',
+        'aside',
+        'gallery',
+        'image',
+        'quote',
+        'status',
+        'video',
+        'audio',
+        'chat',
+    )
+);
+
 
 add_theme_support('automatic-feed-links');
 add_theme_support('post-thumbnails');
