@@ -59,6 +59,9 @@
 						echo 'No post found';
 					endif;
 					?>
+					<div class="row">
+					<?php the_posts_pagination(); ?>
+				</div>
 				
 			</div>
 			<div class="col-12 col-sm-5 col-md-4 col-lg-3 bg-light">
