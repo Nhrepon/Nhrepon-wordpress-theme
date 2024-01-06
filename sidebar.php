@@ -8,7 +8,7 @@
 
 	<!-- Random post section -->
 	<div class="random-post sidebar-section ">
-		<ol>
+	<div class="row">
 			<?php
 			$randompost = new wp_Query(array(
 				'post_type' => 'post',
@@ -19,7 +19,8 @@
 				while ($randompost->have_posts()):
 					$randompost->the_post(); ?>
 
-					<li>
+					
+					<div class="col-12" >
 						<a href="<?php the_permalink(); ?>">
 							<div class="col-12">
 								<?php if (has_post_thumbnail()) {
@@ -31,19 +32,19 @@
 								<?php } ?>
 							</div>
 							<div class="col-12">
-								<h4 class="fs-6">
+								<h4 class="fs-6 py-2">
 									<?php the_title(); ?>
 								</h4>
 								
 							</div>
 						</a>
-					</li>
-
+					</div>
+					
 					<?php
 				endwhile;
 			endif;
 			?>
-		</ol>
+			</div>
 	</div>
 
 	<!-- Nhrepon Side bar 2 -->

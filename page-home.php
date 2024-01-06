@@ -24,7 +24,7 @@
 						<?php
 						$nhrepon = new wp_Query(array(
 							'post_type' => 'post',
-							'posts_per_page' => '3',
+							'posts_per_page' => '5',
 							'orderby' => 'rand',
 							'order' => 'DESC',
 							'category_name' => ''));
@@ -95,7 +95,7 @@
 									</a>
 								</div>
 
-								<h2 class="fs-6">
+								<h2 class="fs-6 py-2">
 									<a href="<?php the_permalink(); ?>">
 										<?php the_title(); ?>
 									</a>
@@ -140,7 +140,7 @@
 							</a>
 						</div>
 
-						<h2 class="fs-5">
+						<h2 class="fs-5 py-2">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_title(); ?>
 							</a>

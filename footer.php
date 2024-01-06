@@ -26,7 +26,7 @@
 							</a>
 						</div>
 
-						<h2 class="fs-5">
+						<h2 class="fs-5 py-2">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_title(); ?>
 							</a>

@@ -46,7 +46,7 @@
 				endif;
 				?>
 				<div class="row">
-					<?php the_posts_pagination(); ?>
+					<?php the_posts_pagination(array('prev_text'=> __('<<','Nhrepon'),'next_text'=> __('>>','Nhrepon')) ); ?>
 				</div>
 			</div>
 			<div class="col-md-4">
