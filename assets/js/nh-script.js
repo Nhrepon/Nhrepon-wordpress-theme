@@ -1,13 +1,4 @@
 
-
-
-
-
-
-
-
-
-
 //Bootstrap class add on menu 
 const items = document.querySelectorAll(".menu-item");
 for (const item of items){
@@ -51,19 +42,3 @@ for(const carouselImg of carouselImgs){
 	carouselImg.setAttribute("width", "100%");
 	carouselImg.setAttribute("height","300px");
 }
-
-/*
-function mobileMenuToggle(){
-	var mobileMenu = document.querySelector('.main-menu');
-	mobileMenu.classList.toggle("mobile-menu");	
-}
-
-
-function mobileMenu(){
-	var mobileMenu = document.querySelector('.main-menu');
-	setTimeout(function(){
-	mobileMenu.classList.toggle("mobile-menu");
-	
-	},500);
-	
-}*/
