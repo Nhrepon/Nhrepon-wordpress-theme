@@ -4,7 +4,7 @@ Theme uri: NHRepon.com
 Author: Md. Nur hossain repon
 Author uri: author uri
 Description: NHRepon is a multitasking wordpress theme that developed by NH Repon.
-Version: 1.0.6
+Version: 1.0.7
 License: Gnu
 License uri:gnu
 Text domain: NHRepon
@@ -15,9 +15,9 @@ Tags: NHRepon wordpress theme
     font-family: SolaimanLipi;
     src: url('assets/fonts/SolaimanLipi.ttf') format("truetype");
 }
-a{text-decoration:none;cursor:pointer;font-size:1.1em;color:#198754;}	
+a{text-decoration:none;cursor:pointer;font-size:1.1em;color:#080072;}	
 a:visited{color:#ff4800;}	
-a:hover{color:#004688;text-decoration: underline;}
+a:hover{color:#006dd3;text-decoration: underline;}
 
 h1{font-size: 2.2em;}
 h2{font-size: 2em;}

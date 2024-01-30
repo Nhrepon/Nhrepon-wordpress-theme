@@ -48,7 +48,7 @@
 								<div class="card my-5 text-center">
 									<img src="<?php echo get_avatar_url(get_the_author_meta('ID')); ?>" class="card-img usr-img" alt="..." >
 									<div class="card-body">
-										<h5 class="card-title"><?php echo the_author_meta( 'display_name' ); ?></h5>
+										<h4 class="card-title"><?php echo the_author_meta( 'display_name' ); ?></h4>
 										<p class="card-text"><?php echo the_author_meta( 'description' ); ?></p>
 										
 									</div>
